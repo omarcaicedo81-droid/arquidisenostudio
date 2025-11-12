@@ -1,0 +1,133 @@
+/* === Estilo general === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+}
+
+/* === Contenedor principal (header y secciones principales) === */
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080; /* gris medio */
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* === Contenedor secundario (menú o footer) === */
+.contenedor2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #696969; /* gris oscuro */
+  padding: 12px;
+  gap: 10px;
+  text-align: center;
+}
+
+/* === Bloques de texto e imagen === */
+.Texto1, .Texto2 {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+  color: white;
+}
+
+.Imagen2, .Imagen3 {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+
+.Imagen2 img,
+.Imagen3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+/* === Títulos === */
+h1 {
+  color: white;
+  font-size: 26px;
+  margin: 0;
+}
+
+h2 {
+  color: black;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* === Texto resaltado === */
+.resaltado {
+  background-color: #ffeb3b;
+  color: black;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+
+/* === Botones === */
+.BTN1 {
+  background-color: rgba(233, 141, 20, 0.9);
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.BTN1:hover {
+  background-color: #bdbdbd;
+  color: black;
+}
+
+/* === Formularios === */
+form {
+  background-color: #e1e1e1;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+input, textarea {
+  width: 95%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* === Footer === */
+footer p {
+  margin: 4px;
+  color: white;
+  font-size: 13px;
+}
+
+/* === Adaptabilidad === */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .Texto1, .Imagen2, .Texto2, .Imagen3 {
+    width: 100%;
+  }
+
+  .BTN1 {
+    width: 100%;
+    text-align: center;
+  }
+}
