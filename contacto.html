@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Omar A. Caicedo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Arquidiseño Studio, diseño, arquitectura, cursos">
+  <title>Inicio | Arquidiseño Studio</title>
+
+  <!-- Bootstrap 5.0 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Enlaces CSS -->
+  <link rel="stylesheet" href="./CSS/Estilos1.css">
+  <link rel="stylesheet" href="./CSS/Estilos.css">
+  <link rel="icon" href="./IMAGENES/iconos/icono1.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+<nav class="franja d-flex justify-content-between align-items-center px-4 py-2" style="background-color: #1c2331; color: white;">
+  <div class="d-flex align-items-center">
+    <a href="index.html">
+      <img src="./IMAGENES/iconos/icono 1.png" alt="Logo Arquidiseño Studio" width="60" height="60" class="me-3">
+    </a>
+    <div class="d-flex align-items-center flex-wrap">
+      <span class="me-4 fw-bold">Arquidiseño Studio</span>
+      <span class="me-4"><i class="bi bi-geo-alt-fill"></i> Calle 5 Sur #23-44 Barrio Mijitayo, Pasto</span>
+      <span style="margin-left: 90px;"><i class="bi bi-telephone-fill"></i> 318 634 5866</span>
+    </div>
+  </div>
+
+  <div class="social-icons d-flex align-items-center">
+    <a href="https://www.hotmail.com" target="_blank" class="me-3">
+      <img src="./IMAGENES/iconos/correo.png" alt="Hotmail" width="28" height="28">
+    </a>
+    <a href="https://www.facebook.com" target="_blank" class="me-3">
+      <img src="./IMAGENES/iconos/facebook.png" alt="Facebook" width="28" height="28">
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+      <img src="./IMAGENES/iconos/instagram.png" alt="Instagram" width="28" height="28">
+    </a>
+  </div>
+</nav>
+
+<!-- ===== FIN BARRA SUPERIOR ===== -->
+
+  <!-- ===== CAROUSEL ===== -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Imágenes -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./IMAGENES/CABECERA/banner2.jpg" class="d-block w-100" alt="Primera imagen del carrusel">
+      </div>
+      <div class="carousel-item">
+        <img src="./IMAGENES/CABECERA/banner1.jpg" class="d-block w-100" alt="Segunda imagen del carrusel">
+      </div>
+      <div class="carousel-item">
+        <img src="./IMAGENES/CABECERA/banner3.jpg" class="d-block w-100" alt="Tercera imagen del carrusel">
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+<!-- ===== FIN DE CAROUSEL ===== -->
+
+
+  <!-- ===== MENÚ PRINCIPAL ===== -->
+  <nav class="menu text-center py-3">
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <a href="index.html" class="btn btn-primary">INICIO</a>
+
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">EMPRESA</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="quienes_somos.html">¿Quiénes somos?</a></li>
+           <li><a class="dropdown-item" href="plan_estrategico.html">Plan estratégico</a></li>
+          <li><a class="dropdown-item" href="instalaciones.html">Instalaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">CURSOS</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="cursos.html">Cursos individuales</a></li>
+          <li><a class="dropdown-item" href="cursos.html#hibridos">Cursos híbridos</a></li>
+          <li><a class="dropdown-item" href="cursos.html#membresia">Planes de membresía</a></li>
+          <li><a class="dropdown-item" href="cursos.html#grabaciones">Acceso a grabaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group" role="group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    TIENDA
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="tienda.html">Novedades</a></li>
+    <li><a class="dropdown-item" href="ofertas.html">Ofertas 🎄</a></li>
+  </ul>
+</div>
+
+
+      <a href="contacto.html" class="btn btn-primary">CONTACTO</a>
+    </div>
+  </nav>
+
+  <!-- ===== FIN DE MENÚ PRINCIPAL ===== -->
+   
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main class="contenedor">
+  <section class="Texto1">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes un proyecto en mente o necesitas más información sobre nuestros servicios?.
+      Completa el siguiente formulario o utiliza nuestros canales de atención.</p>
+
+    <form action="#" method="post">
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="BTN1">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <section class="Imagen2">
+      <h2>Ubicación y contacto</h2>
+      <p><strong>Dirección:</strong> Calle  5sur #23-44 Barrio Mijitayo, Pasto - Nariño</p>
+      <p><strong>Teléfono:</strong> +57 3186345866</p>
+      <p><strong>Correo:</strong> contacto@arquidiseno.com</p>
+      <img src="imagenes/oficina.jpg" alt="Oficina Arquidiseño Studio" class="imgtext">
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="contenedor2">
+    <p>© 2025 Arquidiseño Studio | Diseño y Arquitectura</p>
+    <p>Desarrollado por Omar A. Caicedo</p>
+  </footer>
+</body>
+<!-- bootstrap 5.0 jscript -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</html>
